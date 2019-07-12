@@ -1,0 +1,22 @@
+{
+  "name": "system-command-2",
+  "version": "1.0.0",
+  "description": "Example source on how to call the IBM PASE for i system command from Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IBM i",
+    "AS400",
+    "AS/400",
+    "PASE for i",
+    "AIX",
+    "IFS"
+  ],
+  "author": "Kerim Güney <kerim@gueney.io> (https://gueney.io)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
