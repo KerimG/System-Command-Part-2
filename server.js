@@ -8,6 +8,16 @@ app.get("/wrkactjob", (req, res) => {
   });
 });
 
+app.get("/wrkactjob/:sbs", (req, res) => {
+  exec(
+    `system wrkactjob 'sbs(${req.params.sbs})'`,
+    { encoding: "latin1" },
+    (error, stdout, stderr) => {
+      res.send(`<pre>${stdout}</pre>`);
+    }
+  );
+});
+
 app.listen(port, () => {
   console.log(`Listening on Port ${port}`);
 });
